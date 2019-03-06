@@ -24,9 +24,10 @@ const start = async (port) => {
     // Use your SSR logic here.
     // Even if you don't do explicit routing the pages inside app/pages
     // will still get rendered as per their normal route.
-    app.get('/main', (req, res) => req.app.render(req, res, '/', {
-        routeParam: req.params.routeParam
-    }));
+    app.get('/main', (req, res) => {
+        console.log('routing via /main in app.js');
+        req.app.render(req, res, '/', { routeParam: req.params.routeParam });
+    });
 
     app.listen(port);
 };

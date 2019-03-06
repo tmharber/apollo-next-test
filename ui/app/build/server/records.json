@@ -1,0 +1,70 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "external \"react\"": 0,
+      "external \"styled-jsx/style\"": 1,
+      "external \"next/link\"": 2,
+      "external \"react-bootstrap\"": 3,
+      "../node_modules/next/dist/build/webpack/loaders/emit-file-loader.js??ref--5!../node_modules/babel-loader/lib/index.js!../node_modules/raw-loader/index.js!../node_modules/postcss-loader/src/index.js!styles/vendor/bootstrap.min.css": 4,
+      "../node_modules/next/dist/build/webpack/loaders/emit-file-loader.js??ref--5!../node_modules/babel-loader/lib/index.js!../node_modules/raw-loader/index.js!../node_modules/postcss-loader/src/index.js!../node_modules/sass-loader/lib/loader.js??ref--7-3!styles/index.scss": 5,
+      "multi ./pages/index.js": 6,
+      "external \"prop-types\"": 7,
+      "multi ./pages/profile.js": 8,
+      "../node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/profile.js": 9,
+      "multi ../node_modules/next/dist/pages/_app.js": 10,
+      "../node_modules/next/dist/pages/_app.js": 11,
+      "external \"next/app\"": 12,
+      "multi ../node_modules/next/dist/pages/_error.js": 13,
+      "../node_modules/next/dist/pages/_error.js": 14,
+      "external \"next/error\"": 15,
+      "multi ../node_modules/next/dist/pages/_document.js": 16,
+      "../node_modules/next/dist/pages/_document.js": 17,
+      "external \"next/document\"": 18,
+      "../node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js c715479b1d16f339b4281cb6ed64722c": 19
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/7lPQAeINbcySlYJzKgP7d/pages/index.js": 0,
+      "static/7lPQAeINbcySlYJzKgP7d/pages/profile.js": 1,
+      "static/7lPQAeINbcySlYJzKgP7d/pages/_app.js": 2,
+      "static/7lPQAeINbcySlYJzKgP7d/pages/_error.js": 3,
+      "static/7lPQAeINbcySlYJzKgP7d/pages/_document.js": 4,
+      "static/KIE0FNPmWFFok~8VTofxX/pages/index.js": 5,
+      "static/KIE0FNPmWFFok~8VTofxX/pages/profile.js": 6,
+      "static/KIE0FNPmWFFok~8VTofxX/pages/_app.js": 7,
+      "static/KIE0FNPmWFFok~8VTofxX/pages/_error.js": 8,
+      "static/KIE0FNPmWFFok~8VTofxX/pages/_document.js": 9
+    },
+    "bySource": {},
+    "usedIds": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
