@@ -1,13 +1,16 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import Link from 'next/link';
 
-const HeroPage = (props) => {
-    console.log(props);
-    console.log('in hero page');
-    return (
-        <Fragment>
-            You have searched for hero:
-        </Fragment>
-    )
-}
+import Theme from '../components/Theme';
+import HeroDetails from '../components/HeroDetails';
+
+const HeroPage = (props) => (
+    <Theme>
+        <HeroDetails heroId={props.router.query.heroId} />
+        <Link href="/">
+            <button type="button" className="btn btn-link">{'<'} Back to index</button>
+        </Link>
+    </Theme>
+);
 
 export default HeroPage;

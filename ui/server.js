@@ -14,7 +14,7 @@ app.prepare().then(() => {
 
     server.get('/hero/:heroId', (req, res) => {
         console.log(`got to /hero! id: ${req.params.heroId}`);
-        const queryParams = { title: req.params.id };
+        const queryParams = { heroId: req.params.heroId };
         app.render(req, res, '/hero', queryParams);
     });
 
@@ -22,13 +22,14 @@ app.prepare().then(() => {
         app.render(req, res, '/heroes', { heroRole: req.params.heroRole });
     });
 
-    server.get('*', (req, res) => {
-        console.log('getting request handler and handling');
-        return handle(req, res);
+    server.get('/', (req, res) => {
+        app.render(req, res, '/index');
     });
 
-    server.listen(3000, err => {
+    server.get('*', (req, res) => handle(req, res));
+
+    server.listen(4010, err => {
         if (err) throw err;
-        console.log('> Ready on http://localhost:3000');
+        console.log('> Ready on http://localhost:4010');
     });
 });
